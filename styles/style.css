@@ -1,0 +1,85 @@
+/* Sets Google FOnts */
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Removing Website Default styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Adding Website Custom Default styles*/
+body{
+    background-color: #F4F7FF;
+    margin: auto 140px;
+}
+/* Shard Styles */
+.navHeading{
+    font-weight: 300;
+    font-size: 36px;
+    color: #00303C;
+}
+
+.taskAssignedParagraph{
+    font-weight: 500;
+    color: #00303C;
+}
+.taskAssignedHeading{
+    font-weight: 700;
+    font-size: 32px;
+    color: #00303C;
+}
+.discoverSomethingButton{
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 22px 85px 25px 40px;
+    border-radius: 12px;
+    background: linear-gradient(to right, #3752FD 0%, #6C7FFA 53%, #9BA8F8 100%);
+}
+.TaskAssignedDate{
+    font-weight: 700;
+    font-size: 22px;
+    color: #00303C;
+}
+.activityLogHeading{
+    font-weight: 500;
+    font-size: 20px;
+    color: #00303C;
+}
+.activityLogButton, .CardButton2{
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #3752FD;
+    cursor: pointer;
+}
+.activityLogParagraph{
+    padding: 10px;
+    background-color: #F4F7FF;
+}
+.cardButton1{
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: white;
+    color: #00303C;
+}
+.cardHeading{
+    font-weight: 500;
+    font-size: 24px;
+    color: #00303C;
+}
+.cardParagraph{
+    padding: 16px;
+    background-color: white;
+    border-radius: 8px;
+}
+.cardDateHeading{
+    font-size: 14px;
+    color: #00303C;
+}
+.cardDate{
+    font-weight: 500;
+    color: #00303C;
+}
