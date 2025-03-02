@@ -41,11 +41,12 @@ body{
     font-size: 24px;
     font-weight: 500;
     padding: 22px 85px 25px 40px;
+    border: none;
     border-radius: 12px;
+    cursor: pointer;
     background: linear-gradient(to right, #3752FD 0%, #6C7FFA 53%, #9BA8F8 100%);
 }
 .TaskAssignedDate{
-    font-weight: 700;
     font-size: 22px;
     color: #00303C;
 }
@@ -54,11 +55,13 @@ body{
     font-size: 20px;
     color: #00303C;
 }
-.activityLogButton, .CardButton2{
+.activityLogButton, .cardButton2{
     padding: 10px 20px;
     border-radius: 8px;
-    color: #3752FD;
+    background-color: #3752FD;
     cursor: pointer;
+    color: white;
+    border: none;
 }
 .activityLogParagraph{
     padding: 10px;
@@ -69,6 +72,7 @@ body{
     border-radius: 8px;
     background-color: white;
     color: #00303C;
+    border: none;
 }
 .cardHeading{
     font-weight: 500;
@@ -79,6 +83,12 @@ body{
     padding: 16px;
     background-color: white;
     border-radius: 8px;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 294px;
+    height: 92px;
 }
 .cardDateHeading{
     font-size: 14px;
@@ -119,12 +129,67 @@ nav{
 .rightSideNavImage > img{
     border: 10px solid #F4F7FF;
     border-radius: 50%;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 /* Main Section */
 main{
     display: flex;
+    gap: 24px;
     margin-top: 20px;
     margin-bottom: 60px;
+}
+.leftSide{
+    padding: 24px;
+    background-color: white;
+    border-radius: 16px;
+}
+.headerButtons{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 24px;
+}
+.taskAssignedContainer, .dateContainer{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #F4F7FF;
+    border-radius: 12px;
+    padding: 32px 15px 32px ;
+}
+.taskAssignedImageContainer > img, .dateImageContainer > img{
+    border: 10px solid white;
+    border-radius: 50%;
+}
+
+.discoverSomethingButton{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+.discoverSomethingButtonText{
+    text-align: left;
+}
+.horizontalRule > hr{
+    border-top: 1px dashed rgba(55, 82, 253, 0.2);
+    margin-top: 32px;
+}
+.cardContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px;
+    margin-top: 32px;
+}
+.cardItem{
+    background-color: #F4F7FF;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.cardItemButton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
