@@ -1,3 +1,15 @@
+//Main Part
+const allCompletedButtons = document.getElementsByClassName("completedBtn");
+for(let i = 0; i < allCompletedButtons.length; i++){
+    let button = allCompletedButtons[i];
+    button.addEventListener("click", function(){
+        button.classList.remove("cursor-pointer");
+        button.classList.add("cursor-not-allowed", "bg-gray-300");
+        
+    })
+    
+}
+/* 
 // Discover Something New 
 document.getElementById("discoverSomethingBtn").addEventListener("click", function(){
     window.location.href = "question.html";
@@ -16,3 +28,6 @@ document.getElementById("themeBtn").addEventListener("click", function(){
     ];
     document.getElementById("body").style.backgroundColor = arrayOfColors[number];
 });
+*/
+
+ 
