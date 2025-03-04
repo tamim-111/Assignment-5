@@ -8,14 +8,18 @@ for(let i = 0; i < allCompletedButtons.length; i++){
         button.classList.remove("cursor-pointer");
         button.classList.add("cursor-not-allowed", "bg-gray-300");
         
-        alert("Board Updated Successfully!");
-        if(i == 5){
-            alert("You have completed all the current Task");
-        }
+     
+       
+        if(taskAssigned > 0){
+            alert("Board Updated Successfully!");
             taskAssigned--; 
             document.getElementById("taskAssigned").innerText = taskAssigned;
             taskDone++;
             document.getElementById("taskDone").innerText = taskDone;
+            if(taskAssigned == 0){
+                alert("Congratulation! You have completed all the current Task");
+            }
+        }
 
             // get current time
             const currentTime = new Date().toLocaleTimeString(); 
